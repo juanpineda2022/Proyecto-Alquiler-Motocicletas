@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jsMensaje.js"></script>
+    <script type="text/javascript" src="js/viewMensaje.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" src="text/css" href="css/estilos.css">
+    <title>App Motos</title>
+</head>
+<body>
+
+    <a href="/index.html" class="button">Volver</a>
+
+    <h1 class="h1Titulos">Gestión de Mensajes</h1>
+
+
+    <section>
+        <button onclick="getAllElementos()">Visualizar Mensajes</button>
+        <div id="tablaMensajes">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Mensaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>  
+            </table>
+
+        </div>
+    </section>
+
+        <div id="vent" class="ventanaEmergente">
+            <!-- <button onclick="close()"><img src="imagenes/close-icon-13577.png"></button> -->
+            <!-- <input id="cerrar" type="image" src="imagenes/close-icon-13577.png"/> -->
+            <a id="cerrar" href="javascript:close()" class="button block">X</a>
+            <h2 class="h2Subtitulos">Por favor ingrese los campos</h2>
+            <h4>Id <input type="number" id="idMj"><br></h4>
+            <h4>Mensaje <input type="text" id="txtMj"><br></h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Mensaje</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <script>getElementos()</script>
+                </tbody>  
+            </table>
+            <button onclick="saveElementos()">Agregar</button>
+            <button onclick="updateElementos()">Actualizar</button>
+        </div>
+
+
+       
+
+    <a href="javascript:open()" class="button block">Editar</a>
+
+    <script>
+        let popup = document.getElementById("vent");
+        function open(){
+            popup.classList.add("open-popup");
+        }
+        function close(){
+            popup.classList.remove("open-popup");
+        }    
+    </script>
+
+    <footer>
+        <h6> G34/Juan Santiago Pineda Rodríguez <br> juan.pineda1.mt@usa.edu.co</h6>
+    </footer>
+
+
+</body>
+</html>
