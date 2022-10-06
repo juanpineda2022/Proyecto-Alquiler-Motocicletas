@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/viewjsMotocicleta.js"></script>
+    <script type="text/javascript" src="js/jsMotocicleta.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" src="text/css" href="css/estilos.css">
+    <title>App Motos</title>
+</head>
+<body>
+
+    <a href="/index.html" class="button">Volver</a>
+
+    <h1 class="h1Titulos">Gestión de Motocicletas</h1>
+
+
+    <section>
+        <button onclick="getAllElementos()">Visualizar Motocicletas</button>
+        <div id="tablaMotocicletas">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Modelo</th>
+                        <th>Marca</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>  
+            </table>
+
+        </div>
+    </section>
+
+        <div id="vent" class="ventanaEmergente">
+            <!-- <button onclick="close()"><img src="imagenes/close-icon-13577.png"></button> -->
+            <!-- <input id="cerrar" type="image" src="imagenes/close-icon-13577.png"/> -->
+            <a id="cerrar" href="javascript:close()" class="button block">X</a>
+            <h2 class="h2Subtitulos">Por favor ingrese los campos</h2>
+            <h4>Id motocicleta <input type="text" id="idMt"><br></h4>
+            <h4>Nombre de la motocicleta <input type="text" id="nameMt"><br></h4>
+            <h4>Marca: <input type="text" id="brandMt"><br></h4>
+            <h4>Modelo: <input type="text" id="modelMt"><br></h4>
+            <h4>Categoría: <input type="number" id="categoryIdMt"><br></h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Modelo</th>
+                        <th>Marca</th>
+                        <th>Categoría</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <script>getElementos()</script>
+                </tbody>  
+            </table>
+            <button onclick="saveElementos()">Agregar</button>
+            <button onclick="updateElementos()">Actualizar</button>
+        </div>
+
+
+       
+
+    <a href="javascript:open()" class="button block">Editar</a>
+
+    <script>
+        let popup = document.getElementById("vent");
+        function open(){
+            popup.classList.add("open-popup");
+        }
+        function close(){
+            popup.classList.remove("open-popup");
+        }    
+    </script>
+
+    <footer>
+        <h6> G34/Juan Santiago Pineda Rodríguez <br> juan.pineda1.mt@usa.edu.co</h6>
+    </footer>
+
+
+</body>
+</html>
