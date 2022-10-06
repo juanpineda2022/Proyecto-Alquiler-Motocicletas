@@ -1,0 +1,148 @@
+body{
+    font-family: 'EB Garamond', serif;
+}
+
+a.button{
+    background: #ECB390;
+    color: #fff;
+    border: solid;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+a.button:hover{
+    background: #FF5733;
+}
+
+nav{
+    background: #FCF8E8;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+}
+.navEnlace{
+    display: inline-block;
+    background: #94B49F;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.navEnlace:hover{
+    background: #59D383;
+
+}
+
+.h1Titulos{
+    color: #416a59;
+    font-size: 50px;
+}
+.h2Subtitulos{
+    color: #16A57D;
+}
+
+h4{
+    color:#FF5733;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+button{
+    background: #ECB390;
+    color: #fff;
+    border: solid;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+button:hover{
+    background: #FF5733 ;
+}
+
+.contenedor{
+    margin: 0 auto;
+    width: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.block{
+    display: inline-block;
+}
+.text-center{
+    text-align: center;
+}
+.columna{
+    background: #CEE5D0;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+}
+ul{
+    /* margin:0;
+    padding:0; */
+    text-align: left;
+    display: inline-block;
+    /* list-style:none; */
+}
+
+table{
+    border-collapse: collapse;
+    width: 20%;
+    /* display: flex;
+    justify-content: left; */
+
+}
+
+th{
+    font-weight: bold;
+    background: #94B49F;
+    border: 1px solid #416a59;
+    padding: 10px;
+}
+
+td{
+    background: #fff;
+    border: 1px solid #416a59;
+    padding: 8px;
+}
+
+.ventanaEmergente{
+    background: #CEE5D0;
+    width: 30%;
+    color: #16A57D;
+    text-align: left;
+    padding: 20px;
+    min-height: 250px;
+    border-radius: 15px;
+    position: absolute;
+    left:30%;
+    top: 34%;
+    visibility: hidden;
+}
+
+.open-popup{
+    visibility: visible;
+}
+
+#cerrar{
+    max-width: 5%;
+    max-height: 5%;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+
+/* @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+    .navEnlace{
+        margin: 10px 0;
+    }
+  } */
+
+
